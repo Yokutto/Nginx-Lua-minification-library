@@ -77,7 +77,7 @@ local content_type_list = {
 			--{"replace me", " with me! ",},
 			{"<!--[^>]-->", "",}, --remove nulled out html example !! I DO NOT RECOMMEND REMOVING COMMENTS, THIS COULD BREAK YOUR ENTIRE WEBSITE FOR OLD BROWSERS, BE AWARE
 			{"(//[^.*]*.\n)", "",}, -- Example: this //will remove //comments (result: this remove)
-			{"(/%*[^*]*%*/)", "",}, -- Example: this /*will*/ remove /*comments*/ (result: this remove)
+			{"(/%*.*%*/)", "",}, -- Example: this /*will*/ remove /*comments*/ (result: this remove)
 			{"<style>(.*)%/%*(.*)%*%/(.*)</style>", "<style>%1%3</style>",},
 			{"<script>(.*)%/%*(.*)%*%/(.*)</script>", "<script>%1%3</script>",},
 			{"%s%s+", "",}, --remove blank characters from html
@@ -92,7 +92,7 @@ local content_type_list = {
 			Regex, Replacement
 			]]
 			{"(//[^.*]*.\n)", "",},
-			{"(/%*[^*]*%*/)", "",},
+			{"(/%*.*%*/)", "",},
 			{"%s%s+", "",},
 			{"[ \t]+$", "",},
 		}
@@ -119,7 +119,7 @@ local content_type_list = {
 	    Regex, Replacement
 	    ]]
 	    		{"(//[^.*]*.\n)", "",},
-			{"(/%*[^*]*%*/)", "",},
+			{"(/%*.*%*/)", "",},
 			{"%s%s+", "",},
 			{"[ \t]+$", "",},
 	  }
@@ -132,7 +132,7 @@ local content_type_list = {
 	    Regex, Replacement
 	    ]]
 	    		{"(//[^.*]*.\n)", "",},
-			{"(/%*[^*]*%*/)", "",},
+			{"(/%*.*%*/)", "",},
 			{"%s%s+", "",},
 			{"[ \t]+$", "",},
 	  }
@@ -145,7 +145,7 @@ local content_type_list = {
 	    Regex, Replacement
 	    ]]
 	    		{"(//[^.*]*.\n)", "",},
-			{"(/%*[^*]*%*/)", "",},
+			{"(/%*.*%*/)", "",},
 			{"%s%s+", "",},
 			{"[ \t]+$", "",},
 	  }
@@ -158,7 +158,7 @@ local content_type_list = {
 	    Regex, Replacement
 	    ]]
 	    		{"(//[^.*]*.\n)", "",},
-			{"(/%*[^*]*%*/)", "",},
+			{"(/%*.*%*/)", "",},
 			{"%s%s+", "",},
 			{"[ \t]+$", "",},
 	  }
@@ -171,7 +171,7 @@ local content_type_list = {
 	    Regex, Replacement
 	    ]]
 	    		{"(//[^.*]*.\n)", "",},
-			{"(/%*[^*]*%*/)", "",},
+			{"(/%*.*%*/)", "",},
 			{"%s%s+", "",},
 			{"[ \t]+$", "",},
 	  }
@@ -184,7 +184,7 @@ local content_type_list = {
 	    Regex, Replacement
 	    ]]
 	    		{"(//[^.*]*.\n)", "",},
-			{"(/%*[^*]*%*/)", "",},
+			{"(/%*.*%*/)", "",},
 			{"%s%s+", "",},
 			{"[ \t]+$", "",},
 	  }
@@ -197,7 +197,7 @@ local content_type_list = {
 	    Regex, Replacement
 	    ]]
 	    		{"(//[^.*]*.\n)", "",},
-			{"(/%*[^*]*%*/)", "",},
+			{"(/%*.*%*/)", "",},
 			{"%s%s+", "",},
 			{"[ \t]+$", "",},
 	  }
@@ -210,7 +210,7 @@ local content_type_list = {
 	    Regex, Replacement
 	    ]]
 	    		{"(//[^.*]*.\n)", "",},
-			{"(/%*[^*]*%*/)", "",},
+			{"(/%*.*%*/)", "",},
 			{"%s%s+", "",},
 			{"[ \t]+$", "",},
 	  }
@@ -223,7 +223,7 @@ local content_type_list = {
 	    Regex, Replacement
 	    ]]
 	    		{"(//[^.*]*.\n)", "",},
-			{"(/%*[^*]*%*/)", "",},
+			{"(/%*.*%*/)", "",},
 			{"%s%s+", "",},
 			{"[ \t]+$", "",},
 	  }
@@ -236,7 +236,7 @@ local content_type_list = {
 	    Regex, Replacement
 	    ]]
 	    		{"(//[^.*]*.\n)", "",},
-			{"(/%*[^*]*%*/)", "",},
+			{"(/%*.*%*/)", "",},
 			{"%s%s+", "",},
 			{"[ \t]+$", "",},
 	  }
@@ -249,7 +249,7 @@ local content_type_list = {
 	    Regex, Replacement
 	    ]]
 	    		{"(//[^.*]*.\n)", "",},
-			{"(/%*[^*]*%*/)", "",},
+			{"(/%*.*%*/)", "",},
 			{"%s%s+", "",},
 			{"[ \t]+$", "",},
 	  }
@@ -262,7 +262,7 @@ local content_type_list = {
 	    Regex, Replacement
 	    ]]
 	    		{"(//[^.*]*.\n)", "",},
-			{"(/%*[^*]*%*/)", "",},
+			{"(/%*.*%*/)", "",},
 			{"%s%s+", "",},
 			{"[ \t]+$", "",},
 	  }
@@ -275,7 +275,7 @@ local content_type_list = {
 	    Regex, Replacement
 	    ]]
 	    		{"(//[^.*]*.\n)", "",},
-			{"(/%*[^*]*%*/)", "",},
+			{"(/%*.*%*/)", "",},
 			{"%s%s+", "",},
 			{"[ \t]+$", "",},
 	  }
@@ -288,7 +288,7 @@ local content_type_list = {
 	    Regex, Replacement
 	    ]]
 	    		{"(//[^.*]*.\n)", "",},
-			{"(/%*[^*]*%*/)", "",},
+			{"(/%*.*%*/)", "",},
 			{"%s%s+", "",},
 			{"[ \t]+$", "",},
 	  }
@@ -301,7 +301,7 @@ local content_type_list = {
 	    Regex, Replacement
 	    ]]
 	    		{"(//[^.*]*.\n)", "",},
-			{"(/%*[^*]*%*/)", "",},
+			{"(/%*.*%*/)", "",},
 			{"%s%s+", "",},
 			{"[ \t]+$", "",},
 	  }
